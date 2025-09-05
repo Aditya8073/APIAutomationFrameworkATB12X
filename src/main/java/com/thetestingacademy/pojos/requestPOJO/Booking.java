@@ -3,6 +3,19 @@ package com.thetestingacademy.pojos.requestPOJO;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+//Booking request payload or body
+//{
+//        "firstname" : "Jim",
+//        "lastname" : "Brown",
+//        "totalprice" : 111,
+//        "depositpaid" : true,
+//        "bookingdates" : {
+//        "checkin" : "2018-01-01",
+//        "checkout" : "2019-01-01"
+//        },
+//        "additionalneeds" : "Breakfast"
+//        }
+
 
 public class Booking {
 

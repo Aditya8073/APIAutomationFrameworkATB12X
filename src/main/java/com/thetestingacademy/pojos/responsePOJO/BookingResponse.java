@@ -5,6 +5,22 @@ import com.thetestingacademy.pojos.requestPOJO.Booking;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+//Booking response
+//{
+//        "bookingid": 1,
+//        "booking": {
+//        "firstname": "Jim",
+//        "lastname": "Brown",
+//        "totalprice": 111,
+//        "depositpaid": true,
+//        "bookingdates": {
+//        "checkin": "2018-01-01",
+//        "checkout": "2019-01-01"
+//        },
+//        "additionalneeds": "Breakfast"
+//        }
+//        }
+
 public class BookingResponse {
 
     private Integer bookingid;
