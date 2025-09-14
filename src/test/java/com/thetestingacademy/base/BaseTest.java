@@ -45,4 +45,12 @@ public class BaseTest {
     public void tearDown(){
         System.out.println("Finished the test");
     }
+
+    public String getToken(){
+        requestSpecification.basePath(APIConstants.AUTH_URL);
+        response=RestAssured.given(requestSpecification).when().body(payloadManager.setAuthPayload()).post();
+        String token=payloadManager.getTokenResponse(response.asString());
+        return token;
+
+    }
 }

@@ -3,7 +3,30 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/aditya.verma/IdeaProjects/APIAutomationFrameworkATB12X">
         <classes>
-            <class name="com.thetestingacademy.tests.sample.TestIntegrationSample">
+            <class name="com.thetestingacademy.tests.restfulbooker.crud.TestCreateBooking">
+                <methods>
+                    <include name="testCreateBookingPOST_Positive"/>
+                    <include name="testCreateBookingPOST_Negative"/>
+                    <include name="testCreateBookingPOST_Random"/>
+                </methods>
+            </class>
+            <class name="com.thetestingacademy.tests.restfulbooker.crud.TestCreateToken">
+                <methods>
+                    <include name="testTokenPOST"/>
+                    <include name="testInvalidTokenPOST"/>
+                </methods>
+            </class>
+            <class name="com.thetestingacademy.tests.restfulbooker.crud.TestHealthCheck">
+                <methods>
+                    <include name="testHealthCheck"/>
+                </methods>
+            </class>
+            <class name="com.thetestingacademy.tests.restfulbooker.crud.TestVWOLogin">
+                <methods>
+                    <include name="testVWOLoginPOST"/>
+                </methods>
+            </class>
+            <class name="com.thetestingacademy.tests.restfulbooker.sample.TestIntegrationSample">
                 <methods>
                     <include name="testCreateBooking"/>
                     <include name="testVerifyBookingId"/>
